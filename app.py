@@ -54,7 +54,7 @@ data_training_array = scaler.fit_transform(data_training)
 
 
 #load my model
-model = load_model(r"C:\Users\anjal\OneDrive\Desktop\keras_model.h5")
+model = load_model("keras_model.h5")
 
 
 #testing part
@@ -89,4 +89,5 @@ plt.plot(y_predicted, 'r', label = 'Predicted Price')
 plt.xlabel('Time')
 plt.ylabel('Price')
 plt.legend()
+
 st.pyplot(fig2)
